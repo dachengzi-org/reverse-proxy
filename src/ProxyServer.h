@@ -1,10 +1,12 @@
 #pragma once
-#include <string>
+#include <unordered_map>
 
 class ProxyServer {
 private:
     int server_fd; // 总机电话
     int port;
+    std::unordered_map<int, int> backend_to_client;
+    std::unordered_map<int, int> client_to_backend;
 
 public:
     // Constructors
