@@ -1,2 +1,11 @@
 build/
+*.o
+*.out
+
+proxy
+server
+
+CMakeCache.txt
 CMakeFiles/
+Makefile
+cmake_install.cmake
